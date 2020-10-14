@@ -1,0 +1,56 @@
+programa {
+	funcao inicio() 
+	{
+		inteiro op
+		real num_1, num_2, resultado
+		cadeia sair
+		
+		sair="s"
+		
+		enquanto (sair=="s")
+		{
+
+		escreva("Escolha a operação: 1 - Soma; 2 - Subtração; 3 - Multiplicação; 4 - Divisão \n")
+		leia(op)
+
+		escreva("Digite o primeiro número: \n")
+		leia(num_1)
+
+		escreva("Digite o segundo número: \n")
+		leia(num_2)
+
+	 	se(op==1)
+	 	{
+	 		resultado = num_1 + num_2
+	 		escreva("\nA soma dos números é igual a: ", resultado)
+	 	}
+	 	senao
+	 	{
+	 		se(op==2)
+ 			{		
+ 				resultado = num_1 - num_2
+ 				escreva("\nA subtração dos números é igual a:", resultado)
+ 			}
+ 			senao
+ 			{
+ 				se(op==3)
+				{
+					resultado = num_1 * num_2
+					escreva("\nA multiplicação dos números é igual a:", resultado)
+				}
+				senao
+				{
+					se(op==4)
+					{
+						resultado = num_1 / num_2
+						escreva("\nA divisão dos números é igual a: ", resultado)
+					}
+				}
+ 			}
+
+	 	}
+	 	escreva("\nDeseja continuar? S/N\n")
+	 	leia(sair)
+}
+}
+}
